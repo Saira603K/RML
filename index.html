@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="overlay">
+                <div class="site-name">
+                    <h1>Read Me Later</h1>
+                </div>
+                <div class="quotes">
+                    <p class="quote">"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
+                    <p class="quote">"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</p>
+                    <p class="quote">"Do not watch the clock. Do what it does. Keep going." - Sam Levenson</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="tabs">
+                <button class="tab-button" onclick="showContent('about')">About Us</button>
+                <button class="tab-button" onclick="showContent('signin')">Sign In</button>
+            </div>
+            <div id="about" class="tab-content">
+                <h2>About Us</h2>
+                <p>Welcome to our website. Here we do amazing things...</p>
+            </div>
+            <div id="signin" class="tab-content" style="display:none;">
+                <h2>Sign In</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    <input type="submit" value="Sign In">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
